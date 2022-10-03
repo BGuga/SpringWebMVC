@@ -23,7 +23,6 @@ public class RequestBodyJsonServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //body로 들어온 데이터를 byte로 다 가져온다
         ServletInputStream inputStream = request.getInputStream();
-        //첫 번째 인자에는 byte코드를 두 번째 인자에는 charset을 넣어줘서 해당 byte코드를 어떻게 해석할 건지 정하고 String을 return한다
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
 
         System.out.println("messageBody = " + messageBody);
