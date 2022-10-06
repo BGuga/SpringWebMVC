@@ -42,9 +42,9 @@ public class MyfrontController extends HttpServlet {
         controllerMap.put("/my-controller/members/new-form/my", new MyformController());
         controllerMap.put("/my-controller/members/my", new MyListController());
         controllerMap.put("/my-controller/members/save/my", new MysaveController());
-        controllerMap.put("/my-controller/members/new-form/v4", new MemberFormControllerV4());
+        controllerMap.put("/my-controller/members/v4/new-form", new MemberFormControllerV4());
         controllerMap.put("/my-controller/members/v4", new MemberListControllerV4());
-        controllerMap.put("/my-controller/members/save/v4", new MemberSaveControllerV4());
+        controllerMap.put("/my-controller/members/v4/save", new MemberSaveControllerV4());
     }
 
     @Override
