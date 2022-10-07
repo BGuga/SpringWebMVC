@@ -48,6 +48,11 @@ public class MyfrontController extends HttpServlet {
     }
 
     @Override
+    protected long getLastModified(HttpServletRequest req) {
+        return super.getLastModified(req);
+    }
+
+    @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String requestURI = req.getRequestURI();
